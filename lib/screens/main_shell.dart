@@ -51,7 +51,7 @@ class _MainShellState extends State<MainShell> {
           color: Theme.of(context).scaffoldBackgroundColor,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.08),
+              color: Colors.black.withValues(alpha: 0.08),
               blurRadius: 20,
               offset: const Offset(0, -5),
             ),
@@ -84,7 +84,7 @@ class _MainShellState extends State<MainShell> {
         duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: isSelected ? AppColors.deepGreen.withOpacity(0.1) : Colors.transparent,
+          color: isSelected ? AppColors.deepGreen.withValues(alpha: 0.1) : Colors.transparent,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Column(

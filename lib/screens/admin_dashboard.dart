@@ -84,7 +84,7 @@ class AdminDashboard extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
-                      BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 10),
+                      BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 10),
                     ],
                   ),
                   child: Column(
@@ -124,7 +124,7 @@ class AdminDashboard extends StatelessWidget {
                                 child: Container(
                                   height: height.toDouble(),
                                   decoration: BoxDecoration(
-                                    color: AppColors.deepGreen.withOpacity(0.3 + (height / 80) * 0.5),
+                                    color: AppColors.deepGreen.withValues(alpha: 0.3 + (height / 80) * 0.5),
                                     borderRadius: const BorderRadius.vertical(
                                       top: Radius.circular(4),
                                     ),
@@ -199,7 +199,7 @@ class AdminDashboard extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 10),
+            BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 10),
           ],
         ),
         child: Column(
@@ -251,7 +251,7 @@ class AdminDashboard extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
-              BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 10),
+              BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 10),
             ],
           ),
           child: Column(
@@ -263,7 +263,7 @@ class AdminDashboard extends StatelessWidget {
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                      color: AppColors.deepGreen.withOpacity(0.1),
+                      color: AppColors.deepGreen.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(Icons.home_rounded, color: AppColors.deepGreen, size: 24),
@@ -296,7 +296,7 @@ class AdminDashboard extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppColors.warning.withOpacity(0.1),
+                      color: AppColors.warning.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Text(
@@ -349,7 +349,7 @@ class AdminDashboard extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         decoration: BoxDecoration(
-                          color: AppColors.error.withOpacity(0.1),
+                          color: AppColors.error.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: const Row(

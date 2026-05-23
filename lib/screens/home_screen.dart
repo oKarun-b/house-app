@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 44,
             height: 44,
             decoration: BoxDecoration(
-              color: AppColors.deepGreen.withOpacity(0.1),
+              color: AppColors.deepGreen.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(14),
             ),
             child: const Icon(Icons.notifications_outlined, color: AppColors.deepGreen),
@@ -180,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: BoxDecoration(
           color: AppColors.offWhite,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.grey.withOpacity(0.15)),
+          border: Border.all(color: Colors.grey.withValues(alpha: 0.15)),
         ),
         child: const Row(
           children: [
@@ -236,7 +236,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   border: Border.all(
                     color: isSelected
                         ? AppColors.deepGreen
-                        : Colors.grey.withOpacity(0.2),
+                        : Colors.grey.withValues(alpha: 0.2),
                   ),
                 ),
                 child: Text(
@@ -287,19 +287,19 @@ class _HomeScreenState extends State<HomeScreen> {
             boxShadow: isPremium
                 ? [
                     BoxShadow(
-                      color: AppColors.gold.withOpacity(0.3),
+                      color: AppColors.gold.withValues(alpha: 0.3),
                       blurRadius: 20,
                       offset: const Offset(0, 4),
                     ),
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.08),
+                      color: Colors.black.withValues(alpha: 0.08),
                       blurRadius: 10,
                       offset: const Offset(0, 2),
                     ),
                   ]
                 : [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.08),
+                      color: Colors.black.withValues(alpha: 0.08),
                       blurRadius: 15,
                       offset: const Offset(0, 4),
                     ),
@@ -320,7 +320,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Icon(
                           Icons.home_rounded,
                           size: 60,
-                          color: Colors.white.withOpacity(0.3),
+                          color: Colors.white.withValues(alpha: 0.3),
                         ),
                       ),
                     ),
@@ -397,7 +397,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           vertical: 6,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.7),
+                          color: Colors.black.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
@@ -421,7 +421,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.15),
+                              color: Colors.black.withValues(alpha: 0.15),
                               blurRadius: 8,
                             ),
                           ],
@@ -442,7 +442,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha: 0.5),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
@@ -563,7 +563,7 @@ class PropertyDetailScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 10,
                     ),
                   ],
@@ -579,7 +579,7 @@ class PropertyDetailScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 10,
                     ),
                   ],
@@ -593,7 +593,7 @@ class PropertyDetailScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 10,
                     ),
                   ],
@@ -605,7 +605,7 @@ class PropertyDetailScreen extends StatelessWidget {
               background: Container(
                 color: AppColors.deepGreen,
                 child: Center(
-                  child: Icon(Icons.home_rounded, size: 80, color: Colors.white.withOpacity(0.3)),
+                  child: Icon(Icons.home_rounded, size: 80, color: Colors.white.withValues(alpha: 0.3)),
                 ),
               ),
             ),
@@ -665,7 +665,7 @@ class PropertyDetailScreen extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                             decoration: BoxDecoration(
-                              color: AppColors.verified.withOpacity(0.1),
+                              color: AppColors.verified.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: const Row(
@@ -739,7 +739,7 @@ class PropertyDetailScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
-                      color: AppColors.warning.withOpacity(0.1),
+                      color: AppColors.warning.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
@@ -774,7 +774,7 @@ class PropertyDetailScreen extends StatelessWidget {
                           width: 56,
                           height: 56,
                           decoration: BoxDecoration(
-                            color: AppColors.deepGreen.withOpacity(0.2),
+                            color: AppColors.deepGreen.withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: const Center(
@@ -840,7 +840,7 @@ class PropertyDetailScreen extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Center(
-                                  child: Icon(Icons.home_rounded, size: 40, color: Colors.white.withOpacity(0.3)),
+                                  child: Icon(Icons.home_rounded, size: 40, color: Colors.white.withValues(alpha: 0.3)),
                                 ),
                               ),
                               Container(
@@ -1012,15 +1012,15 @@ class PropertyDetailScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppColors.deepGreen.withOpacity(0.1),
-            AppColors.deepGreen.withOpacity(0.05),
+            AppColors.deepGreen.withValues(alpha: 0.1),
+            AppColors.deepGreen.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: AppColors.deepGreen.withOpacity(0.2),
+          color: AppColors.deepGreen.withValues(alpha: 0.2),
         ),
       ),
       child: Column(
@@ -1076,7 +1076,7 @@ class PropertyDetailScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: AppColors.deepGreen.withOpacity(0.3)),
+                      border: Border.all(color: AppColors.deepGreen.withValues(alpha: 0.3)),
                     ),
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,

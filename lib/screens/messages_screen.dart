@@ -103,7 +103,7 @@ class MessagesScreen extends StatelessWidget {
         color: isSelected ? AppColors.deepGreen : AppColors.offWhite,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: isSelected ? AppColors.deepGreen : Colors.grey.withOpacity(0.2),
+          color: isSelected ? AppColors.deepGreen : Colors.grey.withValues(alpha: 0.2),
         ),
       ),
       child: Text(
@@ -131,7 +131,7 @@ class MessagesScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           border: Border(
-            bottom: BorderSide(color: Colors.grey.withOpacity(0.1)),
+            bottom: BorderSide(color: Colors.grey.withValues(alpha: 0.1)),
           ),
         ),
         child: Row(
@@ -142,7 +142,7 @@ class MessagesScreen extends StatelessWidget {
                   width: 56,
                   height: 56,
                   decoration: BoxDecoration(
-                    color: AppColors.deepGreen.withOpacity(0.2),
+                    color: AppColors.deepGreen.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: const Center(
@@ -256,7 +256,7 @@ class ChatScreen extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: AppColors.deepGreen.withOpacity(0.2),
+                color: AppColors.deepGreen.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Center(
@@ -305,9 +305,9 @@ class ChatScreen extends StatelessWidget {
             margin: const EdgeInsets.all(16),
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppColors.deepGreen.withOpacity(0.05),
+              color: AppColors.deepGreen.withValues(alpha: 0.05),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.deepGreen.withOpacity(0.1)),
+              border: Border.all(color: AppColors.deepGreen.withValues(alpha: 0.1)),
             ),
             child: Row(
               children: [
@@ -319,7 +319,7 @@ class ChatScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
-                    child: Icon(Icons.home_rounded, size: 24, color: Colors.white.withOpacity(0.6)),
+                    child: Icon(Icons.home_rounded, size: 24, color: Colors.white.withValues(alpha: 0.6)),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -368,7 +368,7 @@ class ChatScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
-                BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, -2)),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, -2)),
               ],
             ),
             child: Row(

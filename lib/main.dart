@@ -118,7 +118,7 @@ class _HouseAppState extends State<HouseApp> {
         elevation: 0,
       ),
       dividerTheme: DividerThemeData(
-        color: Colors.grey.withOpacity(0.1),
+        color: Colors.grey.withValues(alpha: 0.1),
         thickness: 1,
       ),
     );
@@ -188,7 +188,7 @@ class _HouseAppState extends State<HouseApp> {
         ),
       ),
       dividerTheme: DividerThemeData(
-        color: Colors.white.withOpacity(0.08),
+        color: Colors.white.withValues(alpha: 0.08),
         thickness: 1,
       ),
     );

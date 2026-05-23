@@ -354,7 +354,6 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen>
   String? _errorMessage;
   AuthService? _authService;
   String? _verificationId;
-  int? _forceResendingToken;
 
   @override
   void initState() {
@@ -658,7 +657,6 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen>
             setState(() {
               _isLoading = false;
               _verificationId = verificationId;
-              _forceResendingToken = forceToken;
             });
             Navigator.push(
               context,

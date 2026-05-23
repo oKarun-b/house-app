@@ -39,7 +39,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 width: 72,
                 height: 72,
                 decoration: BoxDecoration(
-                  color: AppColors.deepGreen.withOpacity(0.2),
+                  color: AppColors.deepGreen.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Center(
@@ -120,7 +120,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: AppColors.deepGreen.withOpacity(0.3),
+              color: AppColors.deepGreen.withValues(alpha: 0.3),
               blurRadius: 20,
               offset: const Offset(0, 8),
             ),
@@ -134,7 +134,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Icon(Icons.star_rounded, color: Colors.white, size: 20),
@@ -166,7 +166,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Text(
@@ -299,14 +299,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Container(
       margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(color: Colors.grey.withOpacity(0.08))),
+        border: Border(bottom: BorderSide(color: Colors.grey.withValues(alpha: 0.08))),
       ),
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
         leading: Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: AppColors.deepGreen.withOpacity(0.1),
+            color: AppColors.deepGreen.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(10),
           ),
           child: Icon(item['icon'] as IconData, color: AppColors.deepGreen, size: 20),
@@ -324,7 +324,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ? Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 decoration: BoxDecoration(
-                  color: AppColors.deepGreen.withOpacity(0.1),
+                  color: AppColors.deepGreen.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(
@@ -373,7 +373,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Container(
       margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(color: Colors.grey.withOpacity(0.08))),
+        border: Border(bottom: BorderSide(color: Colors.grey.withValues(alpha: 0.08))),
       ),
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
@@ -381,8 +381,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: isDestructive
-                ? AppColors.error.withOpacity(0.1)
-                : AppColors.deepGreen.withOpacity(0.1),
+                ? AppColors.error.withValues(alpha: 0.1)
+                : AppColors.deepGreen.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(10),
           ),
           child: Icon(icon, color: isDestructive ? AppColors.error : AppColors.deepGreen, size: 20),

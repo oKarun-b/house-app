@@ -36,13 +36,13 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: AppColors.deepGreen.withOpacity(0.1),
+                color: AppColors.deepGreen.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Icon(
                 Icons.favorite_rounded,
                 size: 50,
-                color: AppColors.deepGreen.withOpacity(0.3),
+                color: AppColors.deepGreen.withValues(alpha: 0.3),
               ),
             ),
             const SizedBox(height: 24),
@@ -151,7 +151,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
-                BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10, offset: const Offset(0, 2)),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 10, offset: const Offset(0, 2)),
               ],
             ),
             child: Row(
@@ -167,7 +167,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                     ),
                   ),
                   child: Center(
-                    child: Icon(Icons.home_rounded, size: 36, color: Colors.white.withOpacity(0.4)),
+                    child: Icon(Icons.home_rounded, size: 36, color: Colors.white.withValues(alpha: 0.4)),
                   ),
                 ),
                 Expanded(
@@ -233,7 +233,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
-              BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10, offset: const Offset(0, 2)),
+              BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 10, offset: const Offset(0, 2)),
             ],
           ),
           child: Column(
@@ -249,7 +249,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                     ),
                   ),
                   child: Center(
-                    child: Icon(Icons.home_rounded, size: 36, color: Colors.white.withOpacity(0.4)),
+                    child: Icon(Icons.home_rounded, size: 36, color: Colors.white.withValues(alpha: 0.4)),
                   ),
                 ),
               ),

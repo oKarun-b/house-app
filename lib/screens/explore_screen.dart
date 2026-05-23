@@ -70,7 +70,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   decoration: BoxDecoration(
                     color: AppColors.offWhite,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.grey.withOpacity(0.15)),
+                    border: Border.all(color: Colors.grey.withValues(alpha: 0.15)),
                   ),
                   child: Row(
                     children: [
@@ -113,7 +113,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     color: _showFilters ? AppColors.deepGreen : AppColors.offWhite,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
-                      color: _showFilters ? AppColors.deepGreen : Colors.grey.withOpacity(0.15),
+                      color: _showFilters ? AppColors.deepGreen : Colors.grey.withValues(alpha: 0.15),
                     ),
                   ),
                   child: Icon(
@@ -229,7 +229,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 11,
-                            color: Colors.white.withOpacity(0.8),
+                            color: Colors.white.withValues(alpha: 0.8),
                           ),
                         ),
                       ],
@@ -249,9 +249,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       child: Container(
         margin: const EdgeInsets.fromLTRB(20, 8, 20, 16),
         decoration: BoxDecoration(
-          color: AppColors.deepGreen.withOpacity(0.05),
+          color: AppColors.deepGreen.withValues(alpha: 0.05),
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: AppColors.deepGreen.withOpacity(0.1)),
+          border: Border.all(color: AppColors.deepGreen.withValues(alpha: 0.1)),
         ),
         child: Stack(
           children: [
@@ -259,14 +259,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.map_rounded, size: 48, color: AppColors.deepGreen.withOpacity(0.3)),
+                  Icon(Icons.map_rounded, size: 48, color: AppColors.deepGreen.withValues(alpha: 0.3)),
                   const SizedBox(height: 8),
                   Text(
                     'Interactive Map View',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: AppColors.textSecondary.withOpacity(0.7),
+                      color: AppColors.textSecondary.withValues(alpha: 0.7),
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -275,7 +275,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 12,
-                      color: AppColors.textLight.withOpacity(0.7),
+                      color: AppColors.textLight.withValues(alpha: 0.7),
                     ),
                   ),
                 ],
@@ -290,7 +290,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
-                    BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 10),
+                    BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 10),
                   ],
                 ),
                 child: const Icon(Icons.my_location_rounded, color: AppColors.deepGreen, size: 20),
@@ -397,7 +397,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     color: isSelected ? AppColors.deepGreen : AppColors.offWhite,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
-                      color: isSelected ? AppColors.deepGreen : Colors.grey.withOpacity(0.2),
+                      color: isSelected ? AppColors.deepGreen : Colors.grey.withValues(alpha: 0.2),
                     ),
                   ),
                   child: Text(

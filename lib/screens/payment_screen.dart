@@ -59,7 +59,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10),
+                              BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 10),
                             ],
                           ),
                           child: const Icon(Icons.close_rounded, color: AppColors.textPrimary),
@@ -73,7 +73,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                       width: 80,
                       height: 80,
                       decoration: BoxDecoration(
-                        color: AppColors.deepGreen.withOpacity(0.1),
+                        color: AppColors.deepGreen.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(22),
                       ),
                       child: const Icon(Icons.lock_open_rounded, color: AppColors.deepGreen, size: 40),
@@ -107,7 +107,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
-                          BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 20, offset: const Offset(0, 4)),
+                          BoxShadow(color: Colors.black.withValues(alpha: 0.06), blurRadius: 20, offset: const Offset(0, 4)),
                         ],
                       ),
                       child: Column(
@@ -199,7 +199,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(color: Colors.grey.withOpacity(0.2)),
+                                      border: Border.all(color: Colors.grey.withValues(alpha: 0.2)),
                                     ),
                                     child: const TextField(
                                       keyboardType: TextInputType.phone,
@@ -234,7 +234,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                                   borderRadius: BorderRadius.circular(18),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: AppColors.deepGreen.withOpacity(0.3),
+                                      color: AppColors.deepGreen.withValues(alpha: 0.3),
                                       blurRadius: 20,
                                       offset: const Offset(0, 8),
                                     ),
@@ -302,10 +302,10 @@ class _PaymentScreenState extends State<PaymentScreen>
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         decoration: BoxDecoration(
-          color: isSelected ? color.withOpacity(0.1) : AppColors.offWhite,
+          color: isSelected ? color.withValues(alpha: 0.1) : AppColors.offWhite,
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-            color: isSelected ? color : Colors.grey.withOpacity(0.15),
+            color: isSelected ? color : Colors.grey.withValues(alpha: 0.15),
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -314,7 +314,7 @@ class _PaymentScreenState extends State<PaymentScreen>
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.1),
+                color: color.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Icon(icon, color: color, size: 24),
@@ -338,7 +338,7 @@ class _PaymentScreenState extends State<PaymentScreen>
                 shape: BoxShape.circle,
                 color: isSelected ? color : Colors.transparent,
                 border: Border.all(
-                  color: isSelected ? color : Colors.grey.withOpacity(0.3),
+                  color: isSelected ? color : Colors.grey.withValues(alpha: 0.3),
                   width: 2,
                 ),
               ),
@@ -376,7 +376,7 @@ class _PaymentScreenState extends State<PaymentScreen>
             borderRadius: BorderRadius.circular(30),
             boxShadow: [
               BoxShadow(
-                color: AppColors.success.withOpacity(0.3),
+                color: AppColors.success.withValues(alpha: 0.3),
                 blurRadius: 30,
                 offset: const Offset(0, 10),
               ),
@@ -418,7 +418,7 @@ class _PaymentScreenState extends State<PaymentScreen>
               borderRadius: BorderRadius.circular(18),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.deepGreen.withOpacity(0.3),
+                  color: AppColors.deepGreen.withValues(alpha: 0.3),
                   blurRadius: 20,
                   offset: const Offset(0, 8),
                 ),
